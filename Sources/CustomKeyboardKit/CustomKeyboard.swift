@@ -6,6 +6,8 @@
 //  Copyright © 2022 Pascal Burlet. All rights reserved.
 //
 
+#if !os(watchOS)
+
 import Foundation
 import UIKit
 import SwiftUI
@@ -27,3 +29,5 @@ public class CustomKeyboard: UIInputViewController, ObservableObject {
         set { }
     }
 }
+
+#endif

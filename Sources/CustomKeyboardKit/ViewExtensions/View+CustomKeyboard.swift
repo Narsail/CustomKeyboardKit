@@ -5,6 +5,8 @@
 //  Created by PascalBurlet on 30.06.22.
 //
 
+#if !os(watchOS)
+
 import Foundation
 import UIKit
 import SwiftUI
@@ -74,3 +76,4 @@ public struct CustomKeyboardModifierTextField: ViewModifier {
     }
 }
 
+#endif

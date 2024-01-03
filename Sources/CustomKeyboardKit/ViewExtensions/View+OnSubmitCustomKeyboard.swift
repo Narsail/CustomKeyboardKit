@@ -5,6 +5,8 @@
 //  Created by Pascal Burlet on 26.11.22.
 //
 
+#if !os(watchOS)
+
 import Foundation
 import SwiftUI
 
@@ -25,3 +27,5 @@ public extension View {
             .environment(\.onSubmit, action)
     }
 }
+
+#endif

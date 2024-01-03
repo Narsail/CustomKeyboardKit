@@ -6,6 +6,8 @@
 //  Copyright © 2022 Pascal Burlet. All rights reserved.
 //
 
+#if !os(watchOS)
+
 import Foundation
 import UIKit
 
@@ -42,3 +44,5 @@ public class KeyboardInputView: UIView, UIInputViewAudioFeedback {
         return keyboardUIView.intrinsicContentSize
     }
 }
+
+#endif

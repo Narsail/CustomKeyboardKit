@@ -5,6 +5,8 @@
 //  Created by Pascal Burlet on 26.11.22.
 //
 
+#if !os(watchOS)
+
 import Foundation
 import UIKit
 import SwiftUI
@@ -30,3 +32,5 @@ public class CustomKeyboardBuilder: CustomKeyboard {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+#endif
